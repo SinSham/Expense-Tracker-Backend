@@ -107,6 +107,6 @@ app.delete('/api/v1/expenses/:id', authenticateToken, async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
