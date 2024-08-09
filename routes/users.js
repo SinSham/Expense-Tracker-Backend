@@ -7,7 +7,7 @@ require('dotenv').config();
 const router = express.Router();
 
 // Signup Route
-router.post('/signup', async (req, res) => {
+router.post('api/signup', async (req, res) => {
   try {
     const { username, password } = req.body;
 
@@ -35,7 +35,7 @@ router.post('/signup', async (req, res) => {
 });
 
 // Login Route
-router.post('/login', async (req, res) => {
+router.post('api/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 
