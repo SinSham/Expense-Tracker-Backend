@@ -1,3 +1,15 @@
-package-lock.json
-node_modules/*
+# Node modules
+node_modules/
+
+# Environment variables
 .env
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
