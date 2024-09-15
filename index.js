@@ -7,7 +7,11 @@ const userRoutes = require('./routes/users');
 const app = express();
 const PORT = process.env.PORT || 4001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://tracking-expenses-100.netlify.app/login',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 app.use('/api', userRoutes);
 
