@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 4001;
 
 app.use(cors({
-  origin: 'https://tracking-expenses-100.netlify.app/login',
+  origin: 'https://expense-tracker-railway-production.up.railway.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
